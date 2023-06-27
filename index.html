@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeChat Simplificado</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="chat-container">
+
+        <div class="chat-header">
+            <h2>Nombre del usuario</h2>
+            <button class="close-chat">
+                <i class="fas fa-times"></i> <!-- Esto es el ícono de "cerrar" (una X) de Font Awesome -->
+              </button>
+              
+        </div>
+        
+        
+        
+        
+        
+        <div class="chat-content">
+
+            <div class="chat-entry message-received">
+                <img src="./assets/path-to-avatar-received.png" alt="Avatar" class="avatar">
+                <div class="message">
+                    <p>Hola, ¿cómo estás?</p>
+                    <span class="timestamp">12:45 PM</span>
+                </div>
+            </div>
+
+            <div class="chat-entry message-sent">
+                <img src="./assets/path-to-avatar-sent.png" alt="Avatar" class="avatar">
+                <div class="message">
+                    <p>¡Hola! Estoy bien, gracias. ¿Y tú?
+
+                    </p>
+                    <span class="timestamp">12:46 PM</span>
+                </div>
+            </div>
+
+
+            <div class="chat-entry message-received">
+                <img src="./assets/path-to-avatar-received.png" alt="Avatar" class="avatar">
+                <div class="message">
+                    <p>me ecnuentro bien, estoy esperando el reporte del fin de mes</p>
+                    <span class="timestamp">12:45 PM</span>
+                </div>
+            </div>
+
+            <div class="chat-entry message-sent">
+                <img src="./assets/path-to-avatar-sent.png" alt="Avatar" class="avatar">
+                <div class="message">
+                    <p>lo estoy enviando por correo!!
+
+                    </p>
+                    <span class="timestamp">12:46 PM</span>
+                </div>
+            </div>
+            <!-- Más mensajes de chat aquí -->
+
+        </div>
+        <div class="message-input-container">
+            <div class="input-bubble">
+                <textarea class="message-input" oninput="autoResize(this)"></textarea>
+            </div>
+            <button class="send-button">
+                <i class="fas fa-paper-plane"></i> <!-- Aquí usamos el icono de un avión de papel -->
+            </button>
+        </div>
+        
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
